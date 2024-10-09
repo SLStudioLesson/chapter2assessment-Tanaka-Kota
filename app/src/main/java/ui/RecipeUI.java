@@ -36,6 +36,7 @@ public class RecipeUI {
 
                 switch (choice) {
                     case "1":
+                        displayRecipes();
                         // 設問1: 一覧表示機能
                         break;
                     case "2":
@@ -62,6 +63,17 @@ public class RecipeUI {
      * RecipeFileHandlerから読み込んだレシピデータを整形してコンソールに表示します。
      */
     private void displayRecipes() {
+        //RecipeFileHandlerからデータを受け取る
+        RecipeFileHandler displayRecipes = new RecipeFileHandler();
+        System.out.println("Recipes: ");
+        System.out.println("Recipe Name: ");
+        System.out.println("Main Ingredients: ");
+        System.out.println(Stock);
+        // for (String recipe : readRecipes){
+        //     System.out.println(recipe);
+        //     // System.out.println(ingredient1);
+            // System.out.println(Stock);
+        }
 
     }
 
